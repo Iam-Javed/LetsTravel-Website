@@ -1,8 +1,8 @@
-@@ -3,7 +3,7 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Travel Masti</title>
     <title>Travel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
     <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-warning font-weight-bold" href="#">Travel Masti</a>
@@ -18,12 +21,14 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-warning font-weight-bold" href="#">Home <span
                             class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-warning " href="#AboutUs">AboutUs</a>
                 </li>
@@ -33,25 +38,37 @@
                 <li class="nav-item">
                     <a class="nav-link text-warning " href="register.php">Register</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-warning" href="#ContactUs">Contact Us</a>
                 </li>
+
                 <?php if(isset($_SESSION['username'])){?>
                 <li><a class="nav-link text-warning" href="index.php"><?php echo $_SESSION['username'];?></a></li>
                
                 <?php }else {?>
                     <li><a href="login.html">Login</a></li>
+
+
                <?php }?>
                 
             </ul>
+
         </div>
     </nav>
+
+
+
+
+
+
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="3000" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/79.jpg" alt="First slide">
@@ -87,10 +104,19 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+
+
+
+
+
+
+
     <section class="my-5">
         <div id="AboutUs" class="py-5">
             <h2 class="text-center">About Us</h2>
         </div>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
@@ -117,10 +143,19 @@
         </div>
     </section>
     <hr>
+
+
+
+
+
+
+
+
     <section class="my-5">
         <div id="Services" class="py-5">
             <h2 class="text-center">Our Services</h2>
         </div>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-12">
@@ -132,8 +167,10 @@
                                 mostly in the Eastern Hemisphere. It has lots of tourists attraction with full
                                 bloom.Book your tour for fantastic holidays now.Travel London for one of the best
                                 expierience in your life.
+
                                 <br><br>Starting From:<br>
                                 Rs.200,000<br><br>
+
                                 7 Days, 6 Nights
                             </p>
                             <a href="enquiry.html" class="btn btn-primary">Book Package</a>
@@ -151,13 +188,16 @@
                                 its amazing diversity that is embedded in its geography, people and their
                                 cultures.<br>
                                 <br>
+
                                 Starting From:<br>
                                 Rs.85,000<br><br><br>
+
                                 6 Days, 5 Nights
                             </p>
                             <a href="enquiry.html" class="btn btn-primary">Book Package</a>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="card">
@@ -168,6 +208,7 @@
                                 attractive spot in Austrailia.Australia is a country for all seasons.<br><br>
                                 Starting From:<br>
                                 Rs.300,000<br><br>
+
                                 6 Days, 5 Nights<br><br>
                             </p>
                             <a href="enquiry.html" class="btn btn-primary">Book Package</a><br><br>
@@ -175,6 +216,12 @@
                     </div>
     </section>
     <hr>
+
+
+
+
+
+
     <section class="my-5">
         <div id="Gallery" class="py-5">
             <h2 class="text-center"> Our Gallery</h2>
@@ -203,10 +250,17 @@
         </div>
     </section>
     <hr>
+
+
+
+
+
+
     <section class="my-5">
         <div id="ContactUs" class="py-5">
             <h2 class="text-center">Contact Us</h2>
         </div>
+
         <div class="w-50 m-auto">
             <form action="userinfo.php" method="post">
                 <div class="form-group">
@@ -227,14 +281,23 @@
                       </textarea>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
+
             </form>
         </div>
     </section>
+
+
+
+
     <footer>
         <h2 class="p-3 bg-dark text-white text-center">@Travel Masti</h2>
     </footer>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
