@@ -1,6 +1,6 @@
-# Microsoft-Future-Ready-Talent-Internship
+# LetsTravel Website
 
-Microsoft-Future-Ready-Talent-Internship-Project This is Front End website
+This is Front End website. 
 
 Web Technologies used: HTML, CSS, JS, Bootstrap
 
